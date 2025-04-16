@@ -1,0 +1,85 @@
+/* 전체 기본 설정 */
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #fff;
+  color: #111;
+  margin: 2rem;
+  line-height: 1.6;
+}
+
+/* 강조 텍스트 */
+.highlight {
+  color: red;
+  font-weight: bold;
+}
+
+/* 제목 */
+h1 {
+  color: #a70b0b;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+/* 링크 스타일 */
+a {
+  color: #a70b0b;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* 표 스타일 */
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 1rem;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+/* 모든 테이블 행에 hover 효과 추가 */
+table tr:hover {
+  background-color: #eef6ff;
+  transition: background-color 0.3s ease;
+}
+
+th, td {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+thead {
+  background-color: #f0f0f0;
+}
+
+/* 이미지 크기 설정 */
+td img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* 반응형 글자 크기 */
+table td, table th {
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+}
+
+
+/* place 상세 페이지용 지도 박스 스타일 */
+.map-container {
+  margin-top: 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+/* 표와 지도 등을 가운데로 정렬하기 위한 래퍼 */
+.table-wrapper, .map-container {
+  max-width: 900px;
+  margin: 0 auto; /* 가운데 정렬 */
+  padding: 1rem;
+}
